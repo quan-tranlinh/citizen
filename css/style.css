@@ -59,7 +59,7 @@ a:hover {
 
 /*section 01*/
 
-.top_sec01 {
+.section01 {
 	position: relative;
 	width: 100%;
 	height: 550px;
@@ -69,7 +69,7 @@ a:hover {
 	background-repeat: no-repeat;
 }
 
-.top_sec01 h1 {
+.section01 h1 {
 	position: absolute;
 	left: 0;
 	right: 0;
@@ -78,7 +78,7 @@ a:hover {
 }
 
 /*section 02*/
-.top_sec02 {
+.section02 {
 	position: relative;
 	background-image: url(../img/bg_sec02_01.png);
 	background-size: cover;
@@ -89,11 +89,11 @@ a:hover {
 	color: #ffffff;
 }
 
-.top_sec02 {
+.section02 {
 	padding-top: 30px;
 }
 
-.top_sec02 h3  {
+.section02 h3  {
 	font-size: 4rem;
 	text-align: center;
 	line-height: 32px;
@@ -103,7 +103,7 @@ a:hover {
 	left: 0;
 }
 
-.top_sec02 h4 {
+.section02 h4 {
 	text-align: center;
 	font-size: 1.8rem;
 	line-height: 32px;
@@ -111,23 +111,23 @@ a:hover {
 	margin-bottom: 30px;
 }
 
-.top_sec02 .decs {
+.section02 .decs {
 	font-size: 1.8rem;
 	line-height: 32px;
 	text-align: center;
 }
 
 
-.top_sec02 .btn_wrapper {
+.section02 .btn_wrapper {
 	display: flex;
 	justify-content: flex-end;
 }
 
-.top_sec02 .border {
+.section02 .border {
 	border-bottom: 4px solid #000D22;  
 }
 
-.top_sec02 .btn_wrapper a {
+.section02 .btn_wrapper a {
 	font-size: 1.8rem;
 	line-height: 32px;
 	border: 1px solid #ffffff;
@@ -139,7 +139,7 @@ a:hover {
 	align-items: center;
 }
 
-.top_sec02 .btn_wrapper a::before{
+.section02 .btn_wrapper a::before{
 	content: '';
 	display: inline-block;
 	background-image: url(../img/icon_arrow.png);
@@ -151,36 +151,36 @@ a:hover {
 	margin-top: 4px;
 }
 
-.top_sec02 .row {
+.section02 .row {
 	display: flex;
 	justify-content: space-between;
 	padding: 80px 60px 0 60px;
 }
 
-.top_sec02 .row img {
+.section02 .row img {
 	width: 400px;
 	height: 163px;
 	margin-top: 115px;
 }
 
-.top_sec02 .row  h5 {
+.section02 .row  h5 {
 	font-size: 2.4rem;
 	line-height: 42px;
 	margin-bottom: 30px;
 }
 
-.top_sec02 .row  p {
+.section02 .row  p {
 	font-size: 1.8rem;
 	line-height: 36px;
 }
 
 /*section 03*/
 
-.top_sec03 {
+.section03 {
 	padding: 85px 0;
 }
 
-.top_sec03 p {
+.section03 p {
 	font-size: 2.4rem;
 	line-height: 42px;
 	margin-bottom: 45px;
@@ -189,7 +189,7 @@ a:hover {
 }
 
 /*section 04*/
-.top_sec04 {
+.section04 {
 	background-image: url(../img/bg_sec04_01.png);
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -201,23 +201,145 @@ a:hover {
 
 
 /*section 05*/
-.top_sec05 {
-	padding: 45px;
+.section05 {
+	padding: 45px 0;
 	color: #ffffff
 }
 
-.top_sec05 h5 {
+.section05 h5,
+.section07 h5 {
 	font-size: 1.6rem;
 	line-height: 26px;
 }
 
-.top_sec05 h4 {
+.section05 h4,
+.section07 h4 {
 	font-size: 2.6rem;
 	line-height: 44px;
 	margin-bottom: 30px;
 }
 
-.top_sec05 p {
+.section05 p, 
+.section07 p {
 	font-size: 18px;
 	line-height: 36px;
+	margin-bottom: 40px;
+}
+
+.section05 .list_items {
+	display: flex;
+	justify-content: space-between;
+}
+
+.section05 .list_items .item {
+	width: 33%;
+}
+
+.section05 .list_items .item img {
+	width: 100%
+}
+
+.section05 .list_items p {
+	margin: 0 auto;
+	font-size: 1.6rem;
+	line-height: 26pt;
+	width: 220px;
+}
+
+.section05 ul {
+	margin-top: 40px;
+	text-align: center;
+}
+
+.section05 ul li p {
+	font-size: 1.6rem;
+	line-height: 26px;
+}
+
+/*section 06*/
+.section06 {
+	background-image: url(../img/bg_sec06_01.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	overflow: hidden;
+	width: 100%;
+	height: 550px;
+}
+
+/*section 07*/
+.section07 {
+	padding: 45px 0;
+	color: #ffffff;
+}
+
+/*section 08*/
+
+.section08 {
+	color: #ffffff;
+}
+
+.section08 ul li {
+	background-image: url(../img/bg_sec08_01.png);
+	background-size: cover;
+	width: 100%;
+	height: 550px;
+	padding: 0 60px;
+}
+
+.section08 ul li div {
+	padding-left: 53%;
+	padding-top: 210px;
+	height: 100%;
+	border-bottom: 2px solid #323232;
+}
+
+.section08 ul .item02 {
+	background-image: url(../img/bg_sec08_02.png);
+}
+
+.section08 ul .item03 {
+	background-image: url(../img/bg_sec08_03.png);
+}
+
+.section08 ul .item04 {
+	background-image: url(../img/bg_sec08_04.png);
+}
+
+.section08 ul .item02 div,
+.section08 ul .item04 div {
+	padding-left: 93px;
+	padding-top: 210px;
+}
+
+.section08 ul li img {
+	margin-bottom: 18px;
+}
+
+.section08 ul li p {
+	font-size: 18px;
+	line-height: 36px;
+}
+
+/*section 09*/
+.section09 {
+	background-color: #323232;
+	color: #ffffff;
+}
+
+.section09 ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 65px 0 100px;
+}
+
+.section09 ul li {
+	max-width: 200px;
+	width: 200px;
+}
+
+.section09 ul li p {
+	font-size: 1.6rem;
+	line-height: 26px;
 }
