@@ -57,6 +57,13 @@ a:hover {
 	width: 96%;
 }
 
+.header {
+	background-color: #000;
+    font-size: 12px;
+    text-align: center;
+    padding: 10px 0;
+}
+
 /*section 01*/
 
 .section01 {
@@ -297,19 +304,34 @@ a:hover {
 	color: #ffffff;
 }
 
-.section08 ul li {
-	background-image: url(../img/bg_sec08_01.png);
-	background-size: cover;
-	width: 100%;
-	height: 550px;
+.section08 ul {
+	background-color: #000000;
 	padding: 0 60px;
+
 }
 
-.section08 ul li div {
-	padding-left: 53%;
+.section08 ul li {
+	background-image: url(../img/bg_sec08_01.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 100%;
+	height: 550px;
+	border-bottom: 1px solid #323232;
+}
+
+.section08 ul li .inner_in {
+	width: 50%;
+	float: right;
+	padding-top: 180px;
+}
+
+.section08 ul .item02 .inner_in,
+.section08 ul .item04 .inner_in  {
+	width: 50%;
+	float: left;
+	padding-left: 18%;
 	padding-top: 210px;
-	height: 100%;
-	border-bottom: 2px solid #323232;
 }
 
 .section08 ul .item02 {
@@ -322,12 +344,6 @@ a:hover {
 
 .section08 ul .item04 {
 	background-image: url(../img/bg_sec08_04.png);
-}
-
-.section08 ul .item02 div,
-.section08 ul .item04 div {
-	padding-left: 93px;
-	padding-top: 210px;
 }
 
 .section08 ul li img {
@@ -477,3 +493,5 @@ a:hover {
 	width: 180px;
 	height: 75px;
 }
+
+
