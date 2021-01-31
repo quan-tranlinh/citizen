@@ -57,6 +57,11 @@ a:hover {
 	width: 96%;
 }
 
+.inner_in {
+	max-width: 980px;
+    margin: 0 auto;
+}
+
 .header {
 	background-color: #000;
     font-size: 12px;
@@ -92,9 +97,9 @@ a:hover {
 	background-repeat: no-repeat;
 	background-position: bottom;
 	width: 100%;
-	height: 820px;
 	color: #ffffff;
 	position: relative;
+	padding-bottom: 70px;
 }
 
 .section02_cnt {
@@ -113,7 +118,7 @@ a:hover {
 	text-align: center;
 	line-height: 32px;
 	letter-spacing: 0.18em;
-	margin: 36px 0 14px;
+	margin: 40px 0 16px;
 }
 
 .section02 h4 {
@@ -125,17 +130,22 @@ a:hover {
 	letter-spacing: 0.2em;
 }
 
-.section02 .decs {
-	font-size: 1.8rem;
-	line-height: 32px;
-	text-align: center;
-	letter-spacing: 0.12em;
+.section02 .desc {
+	margin: 28px auto 0;
+    max-width: 700px;
+    padding-left: 40px;
 }
 
+.section02 .decs_txt {
+	font-size: 1.8rem;
+	line-height: 2;
+	letter-spacing: 0.10em;
+	text-align: left;
+}
 
-.section02 .btn_wrapper {
-	display: flex;
-	justify-content: flex-end;
+.section02 .decs_txt span {
+	font-size: 1.3rem;
+	line-height: 2.67;
 }
 
 .section02_row {
@@ -144,69 +154,77 @@ a:hover {
 
 .border {
 	border-top: 4px solid #000D22;
+	margin-top: 14px;
 }
 
 .section02 .btn_wrapper a {
-	font-size: 1.8rem;
-	line-height: 32px;
-	border: 1px solid #ffffff;
-	padding: 5px 9px;
-	margin-top: 12px;
-	margin-bottom: 22px;
-	font-weight: bold;
-	display: flex;
-	align-items: center;
-	letter-spacing: 0.2em;
+	display: block;
+    float: right;
+    width: 100%;
+    max-width: 262px;
+    max-height: 42px;
+    margin-top: 8px;
+    margin-right: 45px;
+    padding: 12px 0;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
 }
 
 .section02 .btn_wrapper a::before{
-	content: '';
-	display: inline-block;
-	background-image: url(../img/icon_arrow.png);
-	background-repeat: no-repeat;
-	background-size: cover;
-	width: 13px;
-	height: 17px;
-	margin-right: 10px;
-	margin-top: 4px;
+	content: "";
+    background-image: url(../img/arrow_icon.png);
+    background-size: cover;
+    height: 18px;
+    width: 14px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.section02 .btn_wrapper a span {
+	vertical-align: middle;
+	margin: 0 0 2px 12px;
+    font-size: 1.8rem;
+    letter-spacing: 0.05em;
 }
 
 .section02 .row {
 	display: flex;
 	justify-content: space-between;
-	padding: 80px 0 0 0;
+	padding: 70px 0 0 0;
 	align-items: center;
 }
 
-.section02 .row img {
-	width: 400px;
-	height: 163px;
+
+.section02_row_txt {
+	max-width: 518px;
 }
 
 .section02 .row  h5 {
 	font-size: 2.4rem;
-	line-height: 42px;
+	line-height: 1.75;
 	margin-bottom: 30px;
 	letter-spacing: 0.12em;
 }
 
 .section02 .row  p {
 	font-size: 1.8rem;
-	line-height: 36px;
-	letter-spacing: 0.12em;
+	line-height: 2;
+	letter-spacing: -1px;
 }
 
 /*section 03*/
 
 .section03 {
-	padding: 85px 0;
+	padding: 90px 0 100px;
 }
 
 .section03 p {
 	font-size: 2.4rem;
 	line-height: 42px;
 	margin-bottom: 45px;
-	text-align: center;
+	text-align: left;
 	color: #ffffff;
 }
 .section03 .img_wrapper {
@@ -227,7 +245,7 @@ a:hover {
 
 /*section 05*/
 .section05 {
-	padding: 45px 0;
+	padding: 45px 0 90px;
 	color: #ffffff
 }
 
@@ -235,6 +253,7 @@ a:hover {
 .section07 h5 {
 	font-size: 1.6rem;
 	line-height: 26px;
+	letter-spacing: 0.5em;
 }
 
 .section05 h4,
@@ -242,13 +261,18 @@ a:hover {
 	font-size: 2.6rem;
 	line-height: 44px;
 	margin-bottom: 30px;
+	letter-spacing: 0.12em;
 }
 
 .section05 p, 
 .section07 p {
 	font-size: 18px;
 	line-height: 36px;
-	margin-bottom: 40px;
+	letter-spacing: 0.1em;
+}
+
+.section05 p {
+	margin-bottom: 45px;
 }
 
 .section05 .list_items {
@@ -265,20 +289,23 @@ a:hover {
 }
 
 .section05 .list_items p {
-	margin: 0 auto;
+	width: 250px;
+    margin: 21px auto;
 	font-size: 1.6rem;
-	line-height: 26pt;
-	width: 220px;
+    line-height: 1.625;
+	letter-spacing: 0.12em;
+	text-align: left;
 }
 
 .section05 ul {
-	margin-top: 40px;
+	margin-top: 30px;
 	text-align: center;
 }
 
 .section05 ul li p {
 	font-size: 1.6rem;
 	line-height: 26px;
+    letter-spacing: 0.12em;
 }
 
 .section05 ul li hr {
@@ -287,7 +314,7 @@ a:hover {
 	width: 20px;
 	height: 1px;
 	background-color: #ffffff;
-	margin: 15px auto 25px;
+	margin: 20px auto 25px;
 }
 
 /*section 06*/
@@ -373,12 +400,11 @@ a:hover {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	padding: 65px 0 100px;
+	padding: 60px 0 110px;
 }
 
 .section09 ul li {
-	max-width: 200px;
-	width: 200px;
+	width: 25%;
 	text-align: center;
 }
 
@@ -390,7 +416,7 @@ a:hover {
 	display: block;
 	width: 20px;
 	height: 1px;
-	margin: 10px auto 15px;
+	margin: 16px auto 20px;
 	background-color: #ffffff;
 	content: '';
 }
@@ -398,6 +424,11 @@ a:hover {
 .section09 ul li p {
 	font-size: 1.6rem;
 	line-height: 26px;
+}
+
+.section09 ul li p span {
+    font-size: 1.3rem;
+    line-height: 2;
 }
 
 /*section 10*/
@@ -408,13 +439,12 @@ a:hover {
 .section10 .sec10_header {
 	background-image: url(../img/bg_sec10_01.png); 
 	width: 100%;
-	height: 550px;
 	background-repeat: no-repeat;
 	background-size: cover;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: center;
+	padding: 140px 0 90px;
 }
 
 .section10 .sec10_header img {
@@ -438,6 +468,7 @@ a:hover {
 	line-height: 32px;
 	text-align: center;
 	margin-bottom: 24px;
+	letter-spacing: 0.18rem;
 }
 
 .section10 .sec10_cnt h5 {
@@ -447,18 +478,28 @@ a:hover {
 	margin-bottom: 25px;
 }
 
-.section10 .sec10_cnt p {
-	font-size: 1.6rem;
-	line-height: 36px;
-	padding-left: 80px;
+.section10 .sec10_cnt .desc {
+	font-size: 1.8rem;
+    line-height: 36px;
+    padding-left: 55px;
+	max-width: 725px;
+	width: 100%;
+	margin: 0 auto;
+	letter-spacing: 0.12em;
 }
 
+.section10 .sec10_cnt .desc .spec {
+	font-size: 1.3rem;
+    line-height: 2.769;
+    letter-spacing: 0.12em;
+} 
+
 .section10 .list_items .first_line {
-	font-size: 16px;
+	font-size: 1.6rem;
 	line-height: 32px;
 	margin-top: 70px;
 	margin-bottom: 28px;
-	padding-left: 0;
+	letter-spacing: 0.2rem;
 }
 
 .section10 .list_items .item {
@@ -479,14 +520,19 @@ a:hover {
 	width: 49%;
 	min-width: 49%;
 	border-right: 1px solid #fff;
-	margin-right: 75px;
+	margin-right: 70px;
 }
 
-.section10 .list_items .item span {
+.section10 .list_items .item p {
 	font-size: 2.1rem;
 	line-height: 1.5;
+	letter-spacing: 0.12em;
 }
 
+.section10 .list_items .item p .bold {
+	font-family: 'ヒラギノ角ゴ Pro W6';
+	font-weight: bold;
+}
 
 /*footer*/
 .footer {
