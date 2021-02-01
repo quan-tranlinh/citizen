@@ -628,7 +628,15 @@ a:hover {
 /****************************************************
  * GENERAL SETTING ON SP *
  ****************************************************/
-@media only screen and (max-width: 768px) { 
+@media only screen and (max-width: 640px) { 
+	.inner {
+		max-width: 100%;
+		margin: 0 auto;
+	}
+	.inner_in {
+		max-width: 100%;
+		margin: 0 auto;
+	}
 	.is_pc {
 		display: none;
 	}
@@ -639,7 +647,7 @@ a:hover {
 		display: none;
 	}
 	.section02 {
-		height: auto;
+		padding-bottom: 0;
 	}
 	.section02 .row {
 		flex-direction: column;
@@ -666,33 +674,61 @@ a:hover {
 	.section02_cnt {
 		top: 0;
 		padding: 0 10vw;
+		background-image: url(../img/bg_sec01_01_sp.jpg);
+		background-size: cover;
+		width: 100%;
+		height: 236vw;
 	}
 	.section02_row {
-		padding-top: 104vw;
+		padding-top: 236vw;
 	}
-	.section02 .decs {
+	.section02 .desc {
+		padding-left: 5vw;
+		margin-top: 4.375vw;
+	}
+	.section02 .decs_txt{
 		font-size: 3vw;
-		line-height: 1.8;
+		line-height: 2;
 		letter-spacing: 0.15em;
-		padding-left: 7vw;
-    	margin-top: 3.6vw;
+	}
+	.section02 .decs_txt span{
+		font-size: 2.4vw;
+		line-height: 2.3;
+		letter-spacing: 0.12em;
 	}
 	.section02 .btn_wrapper a {
-		font-size: 2vw;
-		line-height: 4.1vw;
-		border: 1px solid #ffffff;
-		padding: 0.55vw 1.17vw;
-		margin: 2vw 0; 
+		margin-right: -3.2vw;
+		margin-top: 2.3vw;
+		max-width: 40vw;
+		padding: 1.6vw 0;
 	}
-	.section02 .row img {
-		width: 45.57vw;
-		height: auto;
-		margin-bottom: 1.95vw;
+	.section02 .btn_wrapper a span {
+		font-size: 2.8vw;
+    	margin: 0 0 2px 1.6vw;
+	}
+	.section02 .btn_wrapper a::before {
+		width: 1.9vw;
+    	height: 2.4vw;
+	}
+	.border {
+		display: none;
+	}
+	.section02 .section02_row .row{
+		flex-direction: column;
+		background-image: url(../img/bg_sec02_02.jpg);
+		background-size: cover;
+		background-position: bottom right;
+		padding: 11.7vw 10vw 19vw;
 	}
 	.section02 .row h5 {
 		font-size: 4.26vw;
-		margin-bottom: 2.6vw;
+		margin: 8.26vw 0 2.6vw;
 		line-height: 1.8;
+	}
+	.section02 .row p {
+		font-size: 3.2vw;
+		line-height: 1.8;
+		text-align: justify;
 	}
 	.section03 {
 		padding: 9vw 10vw 5vw;
@@ -702,34 +738,40 @@ a:hover {
 		margin-bottom: 5.5vw;
 		line-height: 1.82;
 	}
-	.section02 .row p {
-		font-size: 3.2vw;
-		line-height: 1.8;
-	}
 	.section04 {
 		width: 100%;
 		height: 45.57vw;
 	}
 	.section05 {
-		padding: 4.55vw 0;
+		padding: 10vw 0 19vw;
+	}
+	.section05 .inner_in {
+		padding: 0 10vw;
 	}
 	.section05 h5, .section07 h5 {
-		font-size: 4.133vw;
+		font-size: 3.2vw;
+		line-height: 2;
+		letter-spacing: 0.12em;
 	}
 	.section05 h4, .section07 h4 {
-		font-size: 3.2vw;
-		margin-bottom: 2.7vw;
+		font-size: 4.266vw;
+		line-height: 1.8;
+		letter-spacing: 0.18em;
+		padding: 1.06vw 0 5.6vw;
+		margin-bottom: 0;
 	}
 	.section05 p, .section07 p {
 		font-size: 3.2vw;
-		line-height: 1.8;
+		line-height: 2;
+		text-align: justify;
+		letter-spacing: 0;
+		margin-bottom: 10vw;
 	}
 	.section05 .list_items p {
 		font-size: 3.2vw;
 		line-height: 1.8;
 		margin: 2.133vw auto 7.333vw;
 		width: 100%;
-		text-align: center;
 	}
 	.section05 .list_items {
 		flex-direction: column;
@@ -749,10 +791,14 @@ a:hover {
 		font-size: 3.2vw;
 		line-height: 1.8;
 		margin-bottom: 2vw;
+		text-align: center;
 	}
 	.section06 {
 		width: 100%;
 		height: 45.47vw;
+	}
+	.section07 .inner_in {
+		padding: 0 10vw;
 	}
 	.section07 p {
 		margin-bottom: 0;
@@ -767,36 +813,71 @@ a:hover {
 		max-width: 100%;
 		width: 100%;
 	}
-	.section08 ul li {
-		background-position: top center;
+	.section08 ul li,
+	.section08 .item02,
+	.section08 .item03,
+	.section08 .item04 {
+		background-image: none;
+
+	}
+	.item01::after,
+	.item02::after,
+	.item03::after {
+		display: none;
+	}
+	.section08 .item01,
+	.section08 .item02,
+	.section08 .item03,
+	.section08 .item04 {
+		padding-top: 0;
 		height: auto;
-		padding-bottom: 10vw;
 	}
-	.section08 ul li .inner_in {
-		width: 96%;
-		float: none;
-		margin: 0 auto;
-		text-align: center;
-		padding-top: 55.43vw;
-	}
-	.section08 ul li img {
-		/* width: 50vw; */
-	}
-	.section08 ul li p {
-		font-size: 3.5vw;
-		line-height: 1.8;
-		text-align: left;
-		padding: 0 10vw;
-	}
-	.section08 ul .item02 .inner_in,
-	.section08 ul .item04 .inner_in {
+	.section08 .item01 .wapper_sub,
+	.section08 .item03 .wapper_sub {
 		width: 100%;
+		max-width: 100%;
 		float: none;
+		text-align: center;
+		padding: 5vw 10vw 10vw;
+	}
+	.section08 .item02 .wapper_sub,
+	.section08 .item04 .wapper_sub {
+		float: none;
+		width: 100%;
+		max-width: 100%;
+		text-align: center;
+		padding: 5vw 10vw 10vw;
+	}
+	.item02 .wapper_sub {
 		padding-left: 0;
-		padding-top: 55.43vw;
+	}
+	.item04 .wapper_sub {
+		padding-left: 0;
+	}
+	.wapper_sub .logo {
+		max-width: 25vw;
+		max-width: 25vw;
+	}
+	.item04 .wapper_sub .logo {
+		max-width: 7vw;
+		margin: 0 auto;
+	}
+	.section08 .item01 .desc, 
+	.section08 .item02 .desc, 
+	.section08 .item03 .desc, 
+	.section08 .item04 .desc {
+		font-size: 3.2vw;
+		line-height: 2;
+		text-align: left;
+		margin-top: 3vw;
+	}
+	.section10 .sec10_header {
+		background-image: url(../img/bg_sec10_01.jpg);
+		padding: 10vw 0 8vw;
 	}
 	.section10 .sec10_header img {
-		width: 78vw;
+		width: 65vw;
+		height: auto;
 	}
 	.section10 .sec10_cnt h5 {
 		font-size: 3.2vw;
@@ -806,10 +887,18 @@ a:hover {
 	.section10 .sec10_cnt {
 		padding: 10vw 10vw;
 	}
+	.section10 .sec10_cnt .desc {
+		padding-left: 5vw;
+		font-size: 3.2vw;
+	}
 	.section10 .sec10_cnt h4 {
 		font-size: 5.066vw;
 		line-height: 1.4;
 		letter-spacing: 0.24em;
+		margin-bottom: 3.125vw;
+	}
+	.section10 .list_items {
+		padding: 0 0  0 5vw;
 	}
 	.section10 .sec10_cnt p {
 		padding-left: 0;
@@ -821,8 +910,14 @@ a:hover {
 
 	}
 	.section10 .list_items .item div {
-		padding-left: 6.666vw;
     	padding-bottom: 5.5vw;
+	}
+	.section10 .list_items .item p {
+		font-size: 3vw;
+    	line-height: 2;
+	}
+	.section10 .list_items .item .left p {
+		padding-left: 0;
 	}
 	.section10 .list_items .item .left {
 		width: 100%;
@@ -836,5 +931,21 @@ a:hover {
 	}
 	.section10 .list_items .first_line {
 		margin: 3.25vw 0;
+		text-align: center;
+		padding: 0;
+	}
+	.footer {
+		padding: 9vw 0 5vw;
+	}
+	.footer .footer_info {
+		flex-direction: column;
+		padding:  6vw 00;
+	}
+	.footer .footer_info ul {
+		flex-direction: column;
+	}
+	.footer_copyright {
+		font-size: 2.4vw;
+		padding-top: 4vw;
 	}
 }
