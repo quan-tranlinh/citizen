@@ -979,7 +979,39 @@ a:hover {
 		padding:  6vw 00;
 	}
 	.footer .footer_info ul {
-		flex-direction: column;
+		flex-wrap: wrap;
+	}
+	.footer .footer_info ul li {
+		width: 50%;
+	}
+	.footer .footer_info ul li a {
+		position: relative;
+		display: block;
+		font-size: 2.4vw;
+		padding: 3.533vw 0;
+		border: 1px solid #8f8f8f;
+	}
+	.footer .footer_info ul li a::after {
+		content: '';
+		position: absolute;
+		top: 50%;
+		right: 9.375%;
+		width: 6px;
+		height: 6px;
+		margin-top: -3px;
+		border-top: 1px solid #fff;
+		border-right: 1px solid #fff;
+		-webkit-transform: rotate(45deg);
+    	transform: rotate(45deg);
+	}
+	.footer .footer_info ul li:nth-child(2) a { 
+		border-left: none;
+	}
+	.footer .footer_info ul li:nth-child(3) a { 
+		border-top: none;
+	}
+	.item .rimg {
+		margin-left: 1vw;
 	}
 	.footer_copyright {
 		font-size: 2.4vw;
