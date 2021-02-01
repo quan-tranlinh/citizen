@@ -140,6 +140,11 @@ a:hover {
     padding-left: 40px;
 }
 
+.btn_wrapper {
+	max-width: 1280px;
+	margin: 0 auto;
+}
+
 .section02 .decs_txt {
 	font-size: 1.8rem;
 	line-height: 2;
@@ -407,11 +412,11 @@ a:hover {
 }
 
 .item02 .wapper_sub {
-	padding-left: 236px;
+	padding-left: 90px;
 }
 
 .item04 .wapper_sub {
-	padding-left: 216px;
+	padding-left: 70px;
 }
 
 .item04 .img_wrap {
@@ -635,6 +640,15 @@ a:hover {
  * GENERAL SETTING ON SP *
  ****************************************************/
 @media only screen and (max-width: 640px) { 
+	#main {
+		min-width: auto;
+	}
+	.header {
+		min-width: auto;
+	}
+	.footer {
+		min-width: auto;
+	}
 	.inner {
 		max-width: 100%;
 		margin: 0 auto;
@@ -876,6 +890,22 @@ a:hover {
 		line-height: 2;
 		text-align: left;
 		margin-top: 3vw;
+		margin-bottom: 4.6vw;
+	}
+	.product .img_wrap {
+		width: 40vw;
+		max-width: 40vw;
+		margin: 0 auto;
+	}
+	.product hr {
+		width: 2.66vw;
+    	margin: 2.6vw auto 0;
+	}
+	.product .info {
+		font-size: 3.2vw;
+		line-height: 2;
+		letter-spacing: 0.12em;
+		margin-top: 6vw;
 	}
 	.section10 .sec10_header {
 		background-image: url(../img/bg_sec10_01.jpg);
